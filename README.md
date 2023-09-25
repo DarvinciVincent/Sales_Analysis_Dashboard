@@ -1,10 +1,96 @@
 # Sales-Analysis-Dashboard
 
-**Purpose:** Analyze sales data to identify trends, top-selling products, and revenue metrics for business decision-making.
+## Table of Contents:
 
-**Description:** The main idea of this project is to explore sales trends over time, identify the best-selling products, calculate revenue metrics such as total sales and profit margins, and create visualizations to present findings effectively.
+- [Problem Statement](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#problem-statement-)
+- [Datasource](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#datasource-)
+- [Data Analysis (DAX)](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#data-analysis-dax)
+- [Insights](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#insights)
+- [Recommendation](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#recommendation)
 
-**Project Learning:**<br>
-•	Created an interactive dashboard to track and analyse sales data.<br>•	Used complex parameters to drill down in worksheet and customization using filters and slicers.<br>•	Used different types of customised visualisations (bar chart, pie chart, donut chart, clustered bar chart, scatter chat, line chart, area chart, map, slicers, etc).<br>•	Created a dynamic text to present the key findings from dashboard
+## Problem Statement:
 
+The main idea of this project is to 
+• Explore sales trends over time.<br>
+• Identify the best-selling products.<br>
+• Calculate revenue metrics such as total sales and profit margins.<br>
+• Create visualizations to present findings effectively.
+
+## Datasource:
+
+Dataset used for this task was presented by [MeriSKILL](https://www.meriskill.com/) and Sales dataset:
+
+Dataset: [Sales Dataset]((https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)
+
+## Data Analysis (DAX):
+
+Table and Measures used in all visualization are:
+
+- D_CALENDAR date_table_base = 
+VAR dates = 
+CALENDAR (MIN('Sales Data'[Order Date]), max('Sales Data'[Order Date]))
+VAR date_table_base =
+ADDCOLUMNS (
+dates,
+"Date_raw", FORMAT( [Date], "YYYYMMDD"),
+"Year", YEAR ( [Date] ),
+"Half", FORMAT ( [Date], "YYYY") & " " & IF( MONTH( [Date] ) >= 7,"H2","H1"),
+"Half year", FORMAT ( [Date], "YYYY") & IF( MONTH( [Date]) >= 7, "H2", "H1"), 
+"Quarter", FORMAT ( [Date], "YYYY Q" & QUARTER( [Date] )),
+"Quarter year", FORMAT ( [Date], "YYYY") & " Q" & QUARTER( [Date] ), 
+"Year Month", FORMAT ( [Date], "YYYYMM", "en-GB" ),
+"Month no", FORMAT ( [Date], "MM" ),
+"Month", FORMAT ( [Date], "MMMM", "en-GB" ),
+"Month short", FORMAT ( [Date], "MMM", "en-GB" ),
+"Month short Year", FORMAT ( [Date], "MMM YYYY", "en-GB" ),
+"Month very short Year", FORMAT ( [Date], "MMM YY", "en-GB"), 
+"Week no", WEEKNUM ([Date],2),
+"Start of week", FORMAT(( [Date] +1 ) - WEEKDAY ( [Date], 2), "DD-MMM-YY", "en-GB"),
+"Start week #", YEAR(( [Date] +1) - WEEKDAY ( [Date], 2)) & FORMAT (WEEKNUM( ( [Date] +1 ) - WEEKDAY ( [Date], 2)), "00"),
+"Year WeekNumber", FORMAT ( [Date], "YYYY" ) & " W "  & WEEKNUM([Date],2),
+"Day", FORMAT( [Date], "DD", "en-GB"),
+"Weekday short", FORMAT( [Date], "DDD", "en-GB"),
+"Weekday", FORMAT( [Date], "DDDD", "en-GB") 
+)
+RETURN
+date_table_base'
+
+- SalesPerOrder = 'sum('Sales Data'[Sales]) / COUNT('Sales Data'[Order ID])'
+
+- Total Sales = 'CALCULATE(sum('Sales Data'[Sales]))'
+
+- Time Category = 
+'SWITCH(
+    TRUE(),
+    TIME(5, 0, 0) <= [Time] && [Time] < TIME(12, 0, 0), "Morning",
+    TIME(12, 0, 0) <= [Time] && [Time] < TIME(17, 0, 0), "Afternoon",
+    TIME(17, 0, 0) <= [Time] && [Time] < TIME(21, 0, 0), "Evening",
+    TRUE(), "Night"
+)'
+
+## Insights and Recommendation:
+**📌 Customer Support and Operational Efficiency:**<br>
+Given the peak purchase hours in both the afternoon and evening, it's essential to have sufficient staff available during these times for excellent customer support and efficient
+order processing. Excellent CS during these hours can lead to repeat business. Consider running marketing campaigns and promotions specifically during these afternoon and
+evening hours to further boost sales. 
+
+**📌 Regional Sales Analysis:**<br>
+As San Francisco emerges as the leading sales city, we advise investing in a deep understanding of the factors contributing to this success. These valuable insights can then be
+applied to other regions to replicate the achievements. For cities with lower sales, like Austin, conducting comprehensive market research and revisiting marketing and sales
+strategies may help uncover growth opportunities. Customizing strategies to suit each region's unique characteristics and preferences is paramount. 
+
+**📌 Product Prioritization:**<br>
+Recognizing that MacBook Pro Laptop, iPhone, and ThinkPad Laptop are top-performing products, we encourage the continued prioritization and promotion of these items,
+especially during the forecasted high-sales months of February, March, and April. Exploring bundling options with complementary accessories or services can maximize sales
+potential. For less popular products such as LG dryer and LG washing machine, it's advisable to assess their viability in the product lineup. It might be more beneficial to reallocate
+resources to meet the demand for higher-performing products. 
+
+**📌 Inventory and Seasonal Sales:**<br>
+Given the historical sales data and the forecasted improvement in sales for next 15 days, we recommend proactive inventory management. Increase inventory levels for your best selling
+products during these months to meet the anticipated demand. Implement targeted marketing campaigns to promote these products, and consider offering promotions and bundles to
+maximize sales. Additionally, plan well in advance for December, the peak sales month, by stocking up on popular holiday-season products. For January, when sales tend to dip, consider
+adjusting your inventory strategy by reducing stock levels for products with lower demand during this time while ensuring an adequate supply of products that might still be popular postholiday. In anticipation of the August summer holiday season, maintain a well-stocked inventory of seasonal products. However, in September, when sales tend to dip, consider offering
+promotions or bundling products to stimulate sales.
+
+---
 
