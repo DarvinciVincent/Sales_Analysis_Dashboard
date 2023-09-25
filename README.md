@@ -2,15 +2,14 @@
 
 ## Table of Contents:
 
-- [Problem Statement](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#problem-statement-)
-- [Datasource](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#datasource-)
-- [Data Analysis (DAX)](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#data-analysis-dax)
-- [Insights](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#insights)
-- [Recommendation](https://github.com/DarvinciVincent/Customer_Churn_Retension_dashboard/edit/main/README.md#recommendation)
+- [Problem Statement](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#problem-statement-)
+- [Datasource](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#datasource-)
+- [Data Analysis (DAX)](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#data-analysis-dax)
+- [Insights&Recommendation](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#insights)
 
 ## Problem Statement:
 
-The main idea of this project is to 
+The main idea of this project is to:<br>
 • Explore sales trends over time.<br>
 • Identify the best-selling products.<br>
 • Calculate revenue metrics such as total sales and profit margins.<br>
@@ -20,7 +19,7 @@ The main idea of this project is to
 
 Dataset used for this task was presented by [MeriSKILL](https://www.meriskill.com/) and Sales dataset:
 
-Dataset: [Sales Dataset]((https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)
+Dataset: [Sales Dataset](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)
 
 ## Data Analysis (DAX):
 
