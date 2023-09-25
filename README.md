@@ -25,33 +25,33 @@ Dataset: [Sales Dataset](https://github.com/DarvinciVincent/Sales_Analysis_Dashb
 
 Table and measures used in all visualizations are:
 
-- D_CALENDAR date_table_base = 
-VAR dates = 
-CALENDAR (MIN('Sales Data'[Order Date]), max('Sales Data'[Order Date]))
-VAR date_table_base =
-ADDCOLUMNS (
-dates,
-"Date_raw", FORMAT( [Date], "YYYYMMDD"),
-"Year", YEAR ( [Date] ),
-"Half", FORMAT ( [Date], "YYYY") & " " & IF( MONTH( [Date] ) >= 7,"H2","H1"),
-"Half year", FORMAT ( [Date], "YYYY") & IF( MONTH( [Date]) >= 7, "H2", "H1"), 
-"Quarter", FORMAT ( [Date], "YYYY Q" & QUARTER( [Date] )),
-"Quarter year", FORMAT ( [Date], "YYYY") & " Q" & QUARTER( [Date] ), 
-"Year Month", FORMAT ( [Date], "YYYYMM", "en-GB" ),
-"Month no", FORMAT ( [Date], "MM" ),
-"Month", FORMAT ( [Date], "MMMM", "en-GB" ),
-"Month short", FORMAT ( [Date], "MMM", "en-GB" ),
-"Month short Year", FORMAT ( [Date], "MMM YYYY", "en-GB" ),
-"Month very short Year", FORMAT ( [Date], "MMM YY", "en-GB"), 
-"Week no", WEEKNUM ([Date],2),
-"Start of week", FORMAT(( [Date] +1 ) - WEEKDAY ( [Date], 2), "DD-MMM-YY", "en-GB"),
-"Start week #", YEAR(( [Date] +1) - WEEKDAY ( [Date], 2)) & FORMAT (WEEKNUM( ( [Date] +1 ) - WEEKDAY ( [Date], 2)), "00"),
-"Year WeekNumber", FORMAT ( [Date], "YYYY" ) & " W "  & WEEKNUM([Date],2),
-"Day", FORMAT( [Date], "DD", "en-GB"),
-"Weekday short", FORMAT( [Date], "DDD", "en-GB"),
-"Weekday", FORMAT( [Date], "DDDD", "en-GB") 
-)
-RETURN
+- D_CALENDAR date_table_base = <br>
+VAR dates = <br>
+CALENDAR (MIN('Sales Data'[Order Date]), max('Sales Data'[Order Date]))<br>
+VAR date_table_base =<br>
+ADDCOLUMNS (<br>
+dates,<br>
+"Date_raw", FORMAT( [Date], "YYYYMMDD"),<br>
+"Year", YEAR ( [Date] ),<br>
+"Half", FORMAT ( [Date], "YYYY") & " " & IF( MONTH( [Date] ) >= 7,"H2","H1"),<br>
+"Half year", FORMAT ( [Date], "YYYY") & IF( MONTH( [Date]) >= 7, "H2", "H1"), <br>
+"Quarter", FORMAT ( [Date], "YYYY Q" & QUARTER( [Date] )),<br>
+"Quarter year", FORMAT ( [Date], "YYYY") & " Q" & QUARTER( [Date] ), <br>
+"Year Month", FORMAT ( [Date], "YYYYMM", "en-GB" ),<br>
+"Month no", FORMAT ( [Date], "MM" ),<br>
+"Month", FORMAT ( [Date], "MMMM", "en-GB" ),<br>
+"Month short", FORMAT ( [Date], "MMM", "en-GB" ),<br>
+"Month short Year", FORMAT ( [Date], "MMM YYYY", "en-GB" ),<br>
+"Month very short Year", FORMAT ( [Date], "MMM YY", "en-GB"), <br>
+"Week no", WEEKNUM ([Date],2),<br>
+"Start of week", FORMAT(( [Date] +1 ) - WEEKDAY ( [Date], 2), "DD-MMM-YY", "en-GB"),<br>
+"Start week #", YEAR(( [Date] +1) - WEEKDAY ( [Date], 2)) & FORMAT (WEEKNUM( ( [Date] +1 ) - WEEKDAY ( [Date], 2)), "00"),<br>
+"Year WeekNumber", FORMAT ( [Date], "YYYY" ) & " W "  & WEEKNUM([Date],2),<br>
+"Day", FORMAT( [Date], "DD", "en-GB"),<br>
+"Weekday short", FORMAT( [Date], "DDD", "en-GB"),<br>
+"Weekday", FORMAT( [Date], "DDDD", "en-GB") <br>
+)<br>
+RETURN<br>
 date_table_base'
 
 - SalesPerOrder = 'sum('Sales Data'[Sales]) / COUNT('Sales Data'[Order ID])'
