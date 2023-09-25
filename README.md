@@ -71,24 +71,22 @@ date_table_base'
 **📌 Customer Support and Operational Efficiency:**<br>
 Given the peak purchase hours in both the afternoon and evening, it's essential to have sufficient staff available during these times for excellent customer support and efficient
 order processing. Excellent CS during these hours can lead to repeat business. Consider running marketing campaigns and promotions specifically during these afternoon and
-evening hours to further boost sales. 
+evening hours to further boost sales.
 
 **📌 Regional Sales Analysis:**<br>
 As San Francisco emerges as the leading sales city, we advise investing in a deep understanding of the factors contributing to this success. These valuable insights can then be
 applied to other regions to replicate the achievements. For cities with lower sales, like Austin, conducting comprehensive market research and revisiting marketing and sales
-strategies may help uncover growth opportunities. Customizing strategies to suit each region's unique characteristics and preferences is paramount. 
+strategies may help uncover growth opportunities. Customizing strategies to suit each region's unique characteristics and preferences is paramount.
 
 **📌 Product Prioritization:**<br>
-Recognizing that MacBook Pro Laptop, iPhone, and ThinkPad Laptop are top-performing products, we encourage the continued prioritization and promotion of these items,
-especially during the forecasted high-sales months of February, March, and April. Exploring bundling options with complementary accessories or services can maximize sales
-potential. For less popular products such as LG dryer and LG washing machine, it's advisable to assess their viability in the product lineup. It might be more beneficial to reallocate
-resources to meet the demand for higher-performing products. 
+Recognizing that MacBook Pro Laptop, iPhone, and ThinkPad Laptop are top-performing products, we encourage the continued prioritization and promotion of these items, 
+especially during the forecasted high-sales months of February, March, and April. Exploring bundling options with complementary accessories or services can maximize salespotential. For less popular products such as LG dryer and LG washing machine, it's advisable to assess their viability in the product lineup. It might be more beneficial to reallocate resources to meet the demand for higher-performing products. 
 
 **📌 Inventory and Seasonal Sales:**<br>
-Given the historical sales data and the forecasted improvement in sales for next 15 days, we recommend proactive inventory management. Increase inventory levels for your best selling
+Given the historical sales data and the forecasted improvement in sales for the next 15 days, we recommend proactive inventory management. Increase inventory levels for your best-selling
 products during these months to meet the anticipated demand. Implement targeted marketing campaigns to promote these products, and consider offering promotions and bundles to
 maximize sales. Additionally, plan well in advance for December, the peak sales month, by stocking up on popular holiday-season products. For January, when sales tend to dip, consider
-adjusting your inventory strategy by reducing stock levels for products with lower demand during this time while ensuring an adequate supply of products that might still be popular postholiday. In anticipation of the August summer holiday season, maintain a well-stocked inventory of seasonal products. However, in September, when sales tend to dip, consider offering
+adjusting your inventory strategy by reducing stock levels for products with lower demand during this time while ensuring an adequate supply of products that might still be popular post-holiday. In anticipation of the August summer holiday season, maintain a well-stocked inventory of seasonal products. However, in September, when sales tend to dip, consider offering
 promotions or bundling products to stimulate sales.
 
 ---
