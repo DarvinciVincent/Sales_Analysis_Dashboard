@@ -5,7 +5,7 @@
 - [Problem Statement](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#problem-statement-)
 - [Datasource](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#datasource-)
 - [Data Analysis (DAX)](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#data-analysis-dax)
-- [Insights&Recommendation](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#insights)
+- [Insights & Recommendation](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/README.md#insights)
 
 ## Problem Statement:
 
@@ -19,11 +19,11 @@ The main idea of this project is to:<br>
 
 Dataset used for this task was presented by [MeriSKILL](https://www.meriskill.com/) and Sales dataset:
 
-Dataset: [Sales Dataset](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)
+Dataset: [Sales Dataset](https://github.com/DarvinciVincent/Sales_Analysis_Dashboard/blob/main/Sales%20Data.csv)
 
 ## Data Analysis (DAX):
 
-Table and Measures used in all visualization are:
+Table and measures used in all visualizations are:
 
 - D_CALENDAR date_table_base = 
 VAR dates = 
