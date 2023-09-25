@@ -59,12 +59,12 @@ date_table_base'
 - Total Sales = 'CALCULATE(sum('Sales Data'[Sales]))'
 
 - Time Category = 
-'SWITCH(
-    TRUE(),
-    TIME(5, 0, 0) <= [Time] && [Time] < TIME(12, 0, 0), "Morning",
-    TIME(12, 0, 0) <= [Time] && [Time] < TIME(17, 0, 0), "Afternoon",
-    TIME(17, 0, 0) <= [Time] && [Time] < TIME(21, 0, 0), "Evening",
-    TRUE(), "Night"
+'SWITCH(<br>
+    TRUE(),<br>
+    TIME(5, 0, 0) <= [Time] && [Time] < TIME(12, 0, 0), "Morning",<br>
+    TIME(12, 0, 0) <= [Time] && [Time] < TIME(17, 0, 0), "Afternoon",<br>
+    TIME(17, 0, 0) <= [Time] && [Time] < TIME(21, 0, 0), "Evening",<br>
+    TRUE(), "Night"<br>
 )'
 
 ## Insights and Recommendation:
